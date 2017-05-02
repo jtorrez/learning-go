@@ -1,11 +1,11 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 
-    "learning-go/stringutil"
+	"learning-go/stringutil"
 )
 
 func main() {
-    fmt.Printf(stringutil.Reverse("\n!dlroW ,olleH"))
+	fmt.Printf(stringutil.Reverse("\n!dlroW ,olleH"))
 }
