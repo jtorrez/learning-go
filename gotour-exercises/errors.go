@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 type ErrNegativeSqrt float64
@@ -9,6 +10,8 @@ type ErrNegativeSqrt float64
 func (e ErrNegativeSqrt) Error() string {
 	return fmt.Sprintf("Sqrt: negative number %g", e)
 }
+
+const delta = 1e-10
 
 func Sqrt(f float64) (float64, error) {
 	if f < 0 {
